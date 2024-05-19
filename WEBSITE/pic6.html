@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Buy</title>
+  <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="./style1.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <style>
+      @media (max-width: 900px) {
+      .image {
+            margin: 0 auto; /* top/bottom margin 0, left/right margin auto */
+          }
+          .temp{
+            padding: 5%;
+          }
+          .header-user-actions{
+            align-items: center;
+            gap: 10px;
+          }
+        }
+        .image-container .image {
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            transform: scale(1.05); 
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; 
+        }
+        .image-container:hover .image {
+            transform: scale(1.1); 
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
+        }
+    </style>
+    <style>
+      .BUYNOW {
+        width: 90%;
+          padding: 15px 30px;
+          color: white;
+          border: none;
+          text-align: center;
+          border-radius: 20px;
+          cursor: pointer;
+          font-size: 20px;
+          text-transform: uppercase;
+          transition: background-color 0.3s;
+          background-image: linear-gradient(to right, #de8919, #ee5b5b);
+      }  
+      .BUYNOW:hover {
+          background-image: linear-gradient(to right, #e3cc34, orange);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      .BUYNOW:focus {
+          outline: none;
+      }
+      .BUYNOW:active {
+          background-image: linear-gradient(to right, #a50000, #a50000);
+      }
+      .ans {
+          font-size: 24px;
+          margin-top: 10px;
+      }
+    </style>
+  
+</head>
+
+<body style="background-color: #EEF5FF">
+
+  <div class="overlay" data-overlay></div>
+
+  <!--- HEADER --->
+
+  <header>
+
+    </div>
+
+    <div class="header-main" style="display: flex; background-color: white; justify-content: flex-end;">
+
+        <div class="header-user-actions" style="display: flex; align-items: center;">
+      
+          <button class="action-btn">
+            <ion-icon name="person-outline"></ion-icon>
+          </button>
+      
+          <button class="action-btn">
+            <ion-icon name="heart-outline"></ion-icon>
+          </button>
+      
+          <button class="action-btn">
+            <ion-icon name="bag-handle-outline"></ion-icon>
+          </button>
+      
+          <a href="index.html" class="header-logo">
+            <img src="./images/LOGO.png" alt="Happy Buy's logo" width="130" height="50">
+          </a>
+        </div>
+      </div>
+      
+      
+    
+  <main>
+    <div class="container">
+      <picture>
+        <div class="images" id="images">
+          <div class="image-container">
+            <img class="image" src="images/products/watch-4.jpg" alt="" height="100%" width="100%" style="border-radius: 30px;"/>
+          </div>
+          <!-- <img class="next-icon" src="images/icon-next.svg" alt="" /> -->
+        </div>
+      </picture>
+
+      <div class="modal-zoom zoom-overlay zoom" id="modal-zoom">
+
+      </div>
+      <div class="prodcut-info">
+
+        <p class="brand">Waltham</p>
+        <h1>The Pocket Watch: A Timeless Classic</h1>
+        <p class="product-description" style="text-align: justify;">A symbol of elegance and sophistication, the pocket watch is a timeless accessory that has stood the test of time. Crafted with precision and attention to detail, the pocket watch is more than just a timekeeping device; it is a statement of style and refinement.
+
+          With its classic design and mechanical marvel, the pocket watch adds a touch of old-world charm to any outfit. Whether tucked into a waistcoat pocket or displayed on a chain, the pocket watch is sure to turn heads and spark conversations.
+          
+          Perfect for special occasions or everyday use, the pocket watch is a reminder of a bygone era when craftsmanship and style were paramount. Embrace the elegance of yesteryear with the timeless appeal of the pocket watch.</p>
+
+        <div class="prices">
+          <span class="price">Rs 359.00 <span class="disscount">-50%</span></span>
+          <span class="original-price">Rs 579.00</span>
+        </div>
+
+          <div class="counter" style="display: flex; justify-content: space-evenly;">
+            <a href="/Payment/index.html" class="BUYNOW">BUY NOW</a>
+          </div>
+
+          </div>
+    </div>
+  </main>
+
+  <div>
+    <div class="temp" style="display: flex; gap: 15px; width: 100%; padding-bottom: 5%; justify-content: center; flex-wrap: wrap;">
+      <div style="background-color:white; display: flex; border-radius: 20px; width: 40%; justify-content: center; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
+          <div class="pr" style="display: flex; align-items: center; gap: 10px;">
+          <a class="nope" href="https://amzn.in/d/ePuo4TS">
+              <img src="images/amazon.png" alt="" height="60px" style="padding: 8%;">
+          </a>
+          <h4 style="text-decoration: none; font-size: x-large;">Rs 1410</h4>
+          </div>
+      </div>
+      <div style="background-color:white; display: flex; border-radius: 20px; width: 40%; justify-content: center; box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);">
+          <div class="pr" style="display: flex; align-items: center; gap: 10px;">
+          <a class="nope" href="https://dl.flipkart.com/s/FPEoaFuuuN">
+              <img src="images/flipkart.png" alt="" height="60px" style="padding: 8%">
+          </a>
+          <h4 style="text-decoration: none; font-size:x-large;">Rs 1400</h4>
+          </div>
+      </div>
+  </div>
+
+  <!-- FOOTER -->
+
+  <div class="footer-nav" style="background-color: black; padding: 5%;">
+
+    <div class="container">
+
+      <ul class="footer-nav-list">
+
+        <li class="footer-nav-item">
+          <h4 class="nav-title">Popular Categories</h4>
+        </li>
+
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">Fashion</a>
+        </li>
+
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">Electronic</a>
+        </li>
+
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">Cosmetic</a>
+        </li>
+
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">Health</a>
+        </li>
+
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">Watches</a>
+        </li>
+
+      </ul>
+
+
+      <ul class="footer-nav-list">
+      
+        <li class="footer-nav-item">
+          <h4 class="nav-title">Services</h4>
+        </li>
+      
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">Prices drop</a>
+        </li>
+      
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">New products</a>
+        </li>
+      
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">Best sales</a>
+        </li>
+      
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">Contact us</a>
+        </li>
+      
+        <li class="footer-nav-item">
+          <a href="#" class="footer-nav-link">Sitemap</a>
+        </li>
+      
+      </ul>
+
+      <ul class="footer-nav-list">
+
+        <li class="footer-nav-item">
+          <h4 class="nav-title">Contact</h4>
+        </li>
+
+        <li class="footer-nav-item flex">
+          <div class="icon-box">
+            <ion-icon name="location-outline"></ion-icon>
+          </div>
+
+          <address class="content">
+            IIIT Prayagraj, Uttar Pradesh
+          </address>
+        </li>
+
+        <li class="footer-nav-item flex">
+          <div class="icon-box">
+            <ion-icon name="call-outline"></ion-icon>
+          </div>
+
+          <a class="footer-nav-link">62680-82588</a>
+        </li>
+
+        <li class="footer-nav-item flex">
+          <div class="icon-box">
+            <ion-icon name="mail-outline"></ion-icon>
+          </div>
+
+          <a href="mailto:example@gmail.com" class="footer-nav-link">iit2022012@gmail.com</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-nav-list">
+
+        <li class="footer-nav-item">
+          <h4 class="nav-title">Follow Us</h4>
+        </li>
+
+        <li>
+          <ul class="social-link">
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+            <li class="footer-nav-item">
+              <a href="#" class="footer-nav-link">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+</body>
+<script src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+
+</html>
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
